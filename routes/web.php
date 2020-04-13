@@ -1,5 +1,7 @@
 <?php
 
+use Illuminate\Support\Facades\Route;
+
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -14,5 +16,4 @@
 Route::get('/', function () {
     return view('welcome');
 });
-//Route::get('/beranda', 'KamarController@index');
-Route::resource('/Home','KamarController');
+Route::resource('sewa','SewaController');
