@@ -17,3 +17,6 @@ Route::get('/', function () {
     return view('welcome');
 });
 Route::resource('sewa','SewaController');
+Auth::routes();
+
+Route::get('/home', 'sewacontroller@index')->name('home');
