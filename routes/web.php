@@ -20,3 +20,4 @@ Route::resource('sewa','SewaController');
 Auth::routes();
 
 Route::get('/home', 'sewacontroller@index')->name('home');
+
